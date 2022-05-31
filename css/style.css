@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* INIZIO REGOLE DI DEBUG */
+.debug .col {
+    border: dotted 2px black;
+}
+
+.debug header .topbar > div {
+    background-color: gold;
+}
+
+.debug #jumbotron {
+    background-color: darkblue;
+}
+
+.debug #jumbotron .content {
+    background-color: violet;
+}
+
+.debug main section {
+    height: 600px;
+}
+
+.debug main section:last-child {
+    height: 1000px;
+}
+
+.debug .big-column {
+    background-color: dodgerblue;
+}
+
+.debug .small-column {
+    background-color: pink;
+}
+
+.debug .full-column {
+    background-color: green;
+}
+
+.debug .footer-top {
+    height: 200px;
+}
+
+.debug .main-column {
+    background-color: lightcoral;
+}
+
+.debug .footer-top .menu-column .col{
+  border: dotted 2px white;
+  background-color: lightseagreen;
+}
+
+.debug .footer-bottom {
+    background-color: aquamarine;
+}
+
+.debug .footer-bottom .col {
+    background-color: pink;
+}
+
+
+
+
+
+/* HEADER */
+header {
+    background-color: lightblue;
+    height: 585px;
+}
+
+header .topbar {
+    height: 80px;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+header .topbar > div {
+    padding: 10px;
+}
+
+header .logo, header .login {
+width: 20%;
+}
+
+header .link {
+    width: 60%;
+}
+
+header .link ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+header .link li {
+    padding: 0 5px;
+}
+
+header .login {
+    text-align: right;
+}
+
+#jumbotron {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+#jumbotron .content {
+    height: 100%;
+    width: 50%;
+}
+/* FINE HEADER */
+
+
+
+
+/* MAIN */
+main section {
+    padding: 50px;
+}
+
+.bg-grey {
+    background-color: lightgray;
+}
+
+.section-container {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+    /* regola per spaziare i quadrati in futuro se serve⁄ */
+    justify-content: space-between;
+}
+
+.big-column {
+    width: 60%;
+}
+
+.small-column {
+    width: 40%;
+}
+
+.full-column {
+    height: 100%;
+    width: 100%;
+}
+/* FINE MAIN */
+
+
+
+
+/* FOOTER⁄ */
+
+footer {
+    background-color: #23272a;
+}
+
+.footer-top {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0 50px 0;
+
+    /* regola per spaziare i quadrati in futuro se serve⁄ */
+    justify-content: space-between;
+}
+
+.footer-top .main-column {
+    width: 25%;
+}
+
+.footer-top .menu-column {
+    width: 75%;
+    display: flex;
+
+    /* regola per spaziare i quadrati in futuro se serve⁄ */
+    justify-content: space-between;
+}
+
+.footer-top .menu-column .col {
+    flex-basis: 25%;
+}
+
+.footer-bottom {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 80px;
+    margin: 50px auto 0;
+    align-items: center;
+
+    /* regola per spaziare i quadrati in futuro se serve⁄ */
+    justify-content: space-between;
+
+}
+
+.footer-bottom .col {
+    padding: 10px;
+}
+
+
